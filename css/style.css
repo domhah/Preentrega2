@@ -34,19 +34,6 @@ header{
     background-color: white;
 }    
 
-h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 48px;
-    margin-top: 20px;
-}
-
-h2{
-    font-size: 25px;
-    margin-bottom: 30px;
-}
-
 header nav ul a{
     color: white;
     text-decoration: none;
@@ -61,25 +48,28 @@ header nav li a:hover{
 
 /*MAIN*/
 
-.titulo{
-    text-align: center;
-    background-color: #FFE3C9;
-    background-image: url(../img/fondo_mascotas.png);
-}
-
 @font-face{
     font-family: "Garamond_Regular";
     src: url(../fonts/EBGaramond-Regular.ttf)
 }    
 
-body{
-    font-family:"Garamond_Regular";
+.fondo_huellas{
+    background-image: url(../img/fondo_mascotas.png);
 }
 
-.contenedor{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;   
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .grid_inicio{
@@ -96,11 +86,35 @@ body{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 60px;
+    font-size: 55px;
     place-self: center;
     text-align: center;
     padding: 25px 25px 0px 20px;
     width:fit-content;
+    letter-spacing: 1px;
+}
+
+.texto_inicio{
+    text-align: justify;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    padding-top: 80px;
+    color: black;
+}
+
+body{
+    font-family:"Garamond_Regular";
+}
+
+.primer_parrafo_nosotros{
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .grid_nosotros{
@@ -110,6 +124,33 @@ body{
     min-height: 0;
     width:fit-content;
     padding-bottom: 80px;
+}
+
+.nosotros_texto{
+    width: 550px;
+    text-align: justify;
+    display: flex;
+    font-size: 18px;
+    color: black;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-right: 15px;
+}
+
+.img_nosotros{
+    width: fit-content;
+    margin-right: 25px;
+    display: block;
+    object-fit: cover;
+    height: 70vh;
+    place-self: center;
+    border-radius: 5%;
+}
+
+.contenedor{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;   
 }
 
 .perros_conocelos{
@@ -133,19 +174,9 @@ body{
 }
 
 p{
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 0;
     margin-top: 0;
-}
-
-.texto_general{
-    text-align: justify;
-    padding-bottom: 80px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 18px;
-    background-image: url(../img/fondo_mascotas.png);
-    padding-top: 80px;
 }
 
 form{
@@ -158,67 +189,19 @@ form{
 .titulo_pages{
     margin-top: 20px;
     margin-bottom: 30px;
-    font-family: "Garamond_SemiBold";
-    font-size: 25px;
     margin-left: 25px;
-}
-
-.fondo_mascotas{
-    margin-left: 15px;
-    background-image: url(../img/fondo_mascotas.png);
-}
-
-.nosotros_texto{
-    width: 550px;
-    text-align: justify;
-    display: flex;
-    font-size: 18px;
-    color: black;
-    text-align: justify;
-    font-size: 18px;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding-right: 15px;
-}
-
-.img_nosotros{
-    width: fit-content;
-    margin-right: 25px;
-    display: block;
-    object-fit: cover;
-    height: 70vh;
-    place-self: center;
-}
-
-.img_principal{
-    background-image:url(../img/perro_simba.jpg);
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-}
-
-.parrafo_inicio_foto{
-    text-align:right;
-    font-family: "Garamond_SemiBold";
-    color:black;
-    font-size: 40px;
-}
-
-.primer_parrafo_nosotros{
-    margin-top: 30px;
-    text-align: justify;
-    font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
+    font-size: 34px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    letter-spacing:1px;
 }
 
 h3{
     font-size: 20px;
-    font-family: "Garamond_SemiBold";
     color:black;
     margin-left: 25px;
+    font-weight:500;
 }
 
 /*FOOTER*/
