@@ -1,0 +1,16 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    @font-face{
+        font-family: "Garamond_SemiBold";
+        src: url(../fonts/EBGaramond-SemiBold.ttf)
+    }
+    @font-face{
+        font-family: "Garamond_Regular";
+        src: url(../fonts/EBGaramond-Regular.ttf)
+    }
+    font-family:"Garamond_Regular";   
+}

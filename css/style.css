@@ -1,262 +1,223 @@
-*{
-    padding:0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-
-/*HEADER*/
-
-@font-face{
-    font-family: "Garamond_SemiBold";
-    src: url(../fonts/EBGaramond-SemiBold.ttf)
+body {
+  font-family: "Garamond_Regular";
+}
+@font-face {
+  font-family: "Garamond_SemiBold";
+  src: url(../fonts/EBGaramond-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Garamond_Regular";
+  src: url(../fonts/EBGaramond-Regular.ttf);
 }
 
-.logo{
-    width: 105px;
+header {
+  background-color: white;
+}
+header .logo {
+  width: 105px;
+}
+header .navbar-nav {
+  list-style-type: none;
+}
+header .navbar-nav .nav-item {
+  background-color: black;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}
+header .navbar-nav .nav-item .nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-family: "Garamond_SemiBold";
+  font-size: 18px;
+}
+header .navbar-nav .nav-item .nav-link:hover {
+  background-color: white;
+  color: black;
 }
 
-header nav ul{
-    list-style-type: none;
-    font-family:"Garamond_SemiBold";
-    color: white;
-    font-size: 18px;
+main .fondo_huellas {
+  background-image: url(../img/fondo_mascotas.png);
+}
+main .fondo_huellas section h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  margin-top: 20px;
+  text-align: center;
+}
+main .fondo_huellas section h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+main .fondo_huellas section .texto_inicio {
+  text-align: justify;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  padding-top: 80px;
+  color: black;
+}
+main .fondo_huellas section .titulo_pages {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+main .fondo_huellas section .primer_parrafo_nosotros {
+  margin-top: 30px;
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+main .fondo_huellas section form {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  margin-right: 30px;
+}
+main .fondo_huellas section h3 {
+  font-size: 20px;
+  color: black;
+  margin-left: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+main .fondo_huellas .grid_inicio {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  min-height: 0;
+  background-color: #FFE3C9;
+  width: fit-content;
+}
+main .fondo_huellas .grid_inicio .texto_carousel {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 55px;
+  place-self: center;
+  text-align: center;
+  padding: 25px 25px 0px 20px;
+  width: fit-content;
+  letter-spacing: 1px;
+}
+main .fondo_huellas .grid_nosotros {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  min-height: 0;
+  width: fit-content;
+  padding-bottom: 80px;
+}
+main .fondo_huellas .grid_nosotros .nosotros_texto {
+  text-align: justify;
+  display: flex;
+  font-size: 18px;
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  place-self: center;
+  width: fit-content;
+  padding-bottom: 50px;
+}
+main .fondo_huellas .grid_nosotros .img_nosotros {
+  width: fit-content;
+  margin-right: 25px;
+  object-fit: fill;
+  height: 70vh;
+  place-self: center;
+  border-radius: 5%;
+}
+main .fondo_huellas .contenedor {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main .fondo_huellas .contenedor .perros_conocelos {
+  padding: 50px;
+  padding-inline: 60px;
+  margin-top: 20px;
+  text-align: center;
+}
+main .fondo_huellas .contenedor .perros_conocelos img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+main .fondo_huellas .contenedor .perros_conocelos .descripcion {
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+main .fondo_huellas .contenedor .perros_conocelos p {
+  font-size: 17px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-li{
-    margin:50px;
-    background-color: black;
-    border-radius: 10px;
-    margin:10px;
-    text-align: center;
+footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FFE3C9;
+  padding: 20px;
+}
+footer h4 {
+  font-size: 16px;
+  font-family: "Garamond_SemiBold";
 }
 
-header{
-    background-color: white;
-}    
-
-header nav ul a{
-    color: white;
-    text-decoration: none;
-    padding: 0.7rem;
-    border-radius: 10px;
-}
-
-header nav li a:hover{
-    background-color: white;
-    color:black;
-}
-
-/*MAIN*/
-
-@font-face{
-    font-family: "Garamond_Regular";
-    src: url(../fonts/EBGaramond-Regular.ttf)
-}    
-
-.fondo_huellas{
-    background-image: url(../img/fondo_mascotas.png);
-}
-
-h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 56px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-h2{
-    font-size: 25px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.grid_inicio{
+@media screen and (max-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid_inicio {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    min-height: 0;
-    background-color:#FFE3C9;
-    width:fit-content;
-}
-
-.texto_carousel{
-    color: black;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 55px;
-    place-self: center;
-    text-align: center;
-    padding: 25px 25px 0px 20px;
-    width:fit-content;
-    letter-spacing: 1px;
-}
-
-.texto_inicio{
-    text-align: justify;
-    padding-bottom: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 20px;
-    padding-top: 80px;
-    color: black;
-}
-
-body{
-    font-family:"Garamond_Regular";
-}
-
-.primer_parrafo_nosotros{
-    margin-top: 30px;
-    text-align: justify;
-    font-size: 18px;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.grid_nosotros{
+    grid-template-columns: 1fr;
+  }
+  .grid_nosotros {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    min-height: 0;
-    width:fit-content;
-    padding-bottom: 80px;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedor {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .grid_inicio {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .grid_nosotros {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
-.nosotros_texto{
-    width: 550px;
-    text-align: justify;
-    display: flex;
-    font-size: 18px;
-    color: black;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding-right: 15px;
-}
-
-.img_nosotros{
-    width: fit-content;
-    margin-right: 25px;
-    display: block;
-    object-fit: cover;
-    height: 70vh;
-    place-self: center;
-    border-radius: 5%;
-}
-
-.contenedor{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;   
-}
-
-.perros_conocelos{
-        padding: 50px;
-        padding-inline: 60px;
-        margin-top: 20px;
-        text-align: center;
-}
-
-.perros_conocelos img{
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-}
-
-.descripcion{
-    margin-top: 20px;
-    font-weight: bolder;
-    font-size: 18px;
-    margin-bottom: 0;
-}
-
-p{
-    font-size: 17px;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-form{
-    margin-left: 30px;
-    font-weight:500;
-    font-size: 17px;
-    margin-right: 30px;
-}
-
-.titulo_pages{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    font-size: 34px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 300;
-    font-style:normal;
-    letter-spacing:1px;
-}
-
-h3{
-    font-size: 20px;
-    color:black;
-    margin-left: 25px;
-    font-weight:500;
-    text-align: center;
-}
-
-/*FOOTER*/
-
-footer{
-    margin:0 auto;
-    text-align: center;
-    background-color: #FFE3C9;
-    padding: 20px;
-}
-
-h4{
-    font-size: 16px;
-    font-family:"Garamond_SemiBold";
-}
-
-
-/*MEDIA QUERY*/
-
-@media  screen and (max-width:768px) {
-    .contenedor{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;       
-    }
-
-    .grid_inicio{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;  
-    }
-
-    .grid_nosotros{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;  
-    }
-}
-@media  screen and (max-width:480px) {
-    .contenedor{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;        
-    }
-
-    .grid_inicio{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;  
-    }
-
-    .grid_nosotros{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;  
-    }
-}
+/*# sourceMappingURL=style.css.map */

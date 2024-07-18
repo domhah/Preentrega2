@@ -1,0 +1,28 @@
+header{
+    background-color: $wh;
+    .logo{
+        width: 105px;
+    }
+    .navbar-nav{
+        list-style-type: none;
+        .nav-item{
+            background-color: $bl;
+            border-radius: 10px;
+            margin:10px;
+            text-align: center;
+            .nav-link{
+                color: $wh;
+                text-decoration: none;
+                padding: 0.5rem;
+                border-radius: 10px;
+                font-family:"Garamond_SemiBold";
+                font-size: 18px;
+                &:hover{
+                    background-color: $wh;
+                    color: $bl;
+                }
+            }
+        }
+    }
+
+}

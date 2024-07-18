@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img class="logo" src="../img/Huellas a casa.png" alt="Logo Huellas a Casa"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,19 +24,19 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="sobre_nosotros.html">Sobre Nosotros</a>
+                    <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="conocelos.html">Conocelos</a>
+                    <a class="nav-link" href="conocelos.html">Conocelos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="adopcion.html">Adopción</a>
+                    <a class="nav-link" href="adopcion.html">Adopción</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -44,81 +44,83 @@
           </nav>
     </header>
     <main>
-        <section class="fondo_huellas">
-            <h2 class="titulo_pages">ADOPCIÓN</h2>
-            <br>
-            <form>
-                <div class="mb-3">
-                  <label for="name" class="form-label fw-semibold">Nombre</label>
-                  <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                  <label for="surname" class="form-label fw-semibold">Apellido</label>
-                  <input type="text" class="form-control" id="surname">
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label fw-semibold">Teléfono</label>
-                    <input type="tel" class="form-control" id="phone">
-                </div>
-                <div class="mb-3">
-                    <label for="address" class="form-label fw-semibold">Dirección</label>
-                    <textarea class="form-control" id="address" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label fw-semibold">Correo electrónico</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="age" class="form-label fw-semibold">Edad</label>
-                    <input type="number" class="form-control" id="age">
-                </div>
-                <div class="mb-3">
-                    <label for="reason" class="form-label fw-semibold">Motivos para adoptar</label>
-                    <textarea class="form-control" id="reason" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="home" class="form-label fw-semibold">Tipo de vivienda y cantidad de ambientes</label>
-                    <textarea class="form-control" id="home" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="space" class="form-label fw-semibold">¿Tu vivienda cuenta con jardín, terraza o balcón?</label>
-                    <textarea class="form-control" id="space" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="alone" class="form-label fw-semibold">¿Cuánto tiempo pasaría solo el animal diariamente?</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Elegir una opción</option>
-                        <option value="1">Siempre va a haber alguien</option>
-                        <option value="2">Menos de dos horas</option>
-                        <option value="3">Menos de cuatro horas</option>
-                        <option value="4">Menos de siete horas</option>
-                        <option value="5">Siete horas o más</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="expenses" class="form-label fw-semibold">¿Tenés en cuenta el gasto que requiere tener una mascota?</label>
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" name="expenses" id="expenses">
-                    <label class="form-check-label" for="expenses">
-                      Si
-                    </label>
-                    </div>
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" name="expenses" id="expenses">
-                    <label class="form-check-label" for="expenses">
-                      No
-                    </label>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="pets" class="form-label fw-semibold">¿Tenés mascotas actualmente? ¿Cuántas?</label>
-                    <textarea class="form-control" id="pets" rows="3"></textarea>
-                </div>
-                <div class="mb-4">
-                <button type="submit" class="btn btn-primary fw-semibold">Enviar formulario</button>
-                </div>
-            </form>
+      <section class="fondo_huellas">
+        <section>
+          <h2 class="titulo_pages">ADOPCIÓN</h2>
+          <br>
+          <form>
+              <div class="mb-3">
+                <label for="name" class="form-label fw-semibold">Nombre</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="surname" class="form-label fw-semibold">Apellido</label>
+                <input type="text" class="form-control" id="surname">
+              </div>
+              <div class="mb-3">
+                  <label for="phone" class="form-label fw-semibold">Teléfono</label>
+                  <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="mb-3">
+                  <label for="address" class="form-label fw-semibold">Dirección</label>
+                  <textarea class="form-control" id="address" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                  <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                  <label for="age" class="form-label fw-semibold">Edad</label>
+                  <input type="number" class="form-control" id="age">
+              </div>
+              <div class="mb-3">
+                  <label for="reason" class="form-label fw-semibold">Motivos para adoptar</label>
+                  <textarea class="form-control" id="reason" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                  <label for="home" class="form-label fw-semibold">Tipo de vivienda y cantidad de ambientes</label>
+                  <textarea class="form-control" id="home" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                  <label for="space" class="form-label fw-semibold">¿Tu vivienda cuenta con jardín, terraza o balcón?</label>
+                  <textarea class="form-control" id="space" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                  <label for="alone" class="form-label fw-semibold">¿Cuánto tiempo pasaría solo el animal diariamente?</label>
+                  <select class="form-select" aria-label="Default select example">
+                      <option selected>Elegir una opción</option>
+                      <option value="1">Siempre va a haber alguien</option>
+                      <option value="2">Menos de dos horas</option>
+                      <option value="3">Menos de cuatro horas</option>
+                      <option value="4">Menos de siete horas</option>
+                      <option value="5">Siete horas o más</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                  <label for="expenses" class="form-label fw-semibold">¿Tenés en cuenta el gasto que requiere tener una mascota?</label>
+                  <div class="form-check">
+                  <input class="form-check-input" type="radio" name="expenses" id="expenses">
+                  <label class="form-check-label" for="expenses">
+                    Si
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="radio" name="expenses" id="expenses">
+                  <label class="form-check-label" for="expenses">
+                    No
+                  </label>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="pets" class="form-label fw-semibold">¿Tenés mascotas actualmente? ¿Cuántas?</label>
+                  <textarea class="form-control" id="pets" rows="3"></textarea>
+              </div>
+              <div class="mb-4">
+              <button type="submit" class="btn btn-primary fw-semibold">Enviar formulario</button>
+              </div>
+          </form>
         </section>
+      </section>
     </main>
     <footer>
         <h4>📧 info@huellasacasa.com</h4>

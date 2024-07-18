@@ -1,0 +1,134 @@
+main{
+    .fondo_huellas{
+        background-image: url(../img/fondo_mascotas.png);
+        section{
+            h1{
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 56px;
+                margin-top: 20px;
+                text-align: center;
+            }
+            h2{
+                font-size: 25px;
+                margin-bottom: 30px;
+                text-align: center;                
+            }
+            .texto_inicio{
+                text-align: justify;
+                padding-bottom: 80px;
+                padding-left: 50px;
+                padding-right: 50px;
+                font-size: 20px;
+                padding-top: 80px;
+                color: $bl;
+            }
+            .titulo_pages{
+                margin-top: 20px;
+                margin-bottom: 30px;
+                margin-left: 25px;
+                font-size: 40px;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 300;
+                font-style:normal;
+                letter-spacing:1px;
+            }
+            .primer_parrafo_nosotros{
+                margin-top: 30px;
+                text-align: justify;
+                font-size: 18px;
+                margin-bottom: 30px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            form{
+                margin-left: 30px;
+                font-weight:500;
+                font-size: 17px;
+                margin-right: 30px;
+            }
+            h3{
+                font-size: 20px;
+                color:$bl;
+                margin-left: 25px;
+                font-weight:500;
+                text-align: center;
+            }
+        }
+        .grid_inicio{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            min-height: 0;
+            background-color:$fondo;
+            width:fit-content;
+            .texto_carousel{
+                color: $bl;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 55px;
+                place-self: center;
+                text-align: center;
+                padding: 25px 25px 0px 20px;
+                width:fit-content;
+                letter-spacing: 1px;
+            }
+        }
+        .grid_nosotros{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            min-height: 0;
+            width:fit-content;
+            padding-bottom: 80px;
+            .nosotros_texto{
+                text-align: justify;
+                display: flex;
+                font-size: 18px;
+                color: $bl;
+                padding-left: 25px;
+                padding-right: 25px;
+                place-self: center;
+                width:fit-content;
+                padding-bottom: 50px;
+            }
+            .img_nosotros{
+                width: fit-content;
+                margin-right: 25px;
+                object-fit:fill;
+                height:70vh;
+                place-self: center;
+                border-radius: 5%;
+            }
+        }
+        .contenedor{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            .perros_conocelos{
+                padding: 50px;
+                padding-inline: 60px;
+                margin-top: 20px;
+                text-align: center;
+                img{
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px;
+                }
+                .descripcion{
+                    margin-top: 20px;
+                    font-weight: bolder;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 17px;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+            }   
+        }   
+    }
+}
