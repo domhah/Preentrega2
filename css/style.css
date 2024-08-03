@@ -37,10 +37,12 @@ header .navbar-nav .nav-item .nav-link {
   border-radius: 10px;
   font-family: "Garamond_SemiBold";
   font-size: 18px;
+  transition: all 0.5s;
 }
 header .navbar-nav .nav-item .nav-link:hover {
   background-color: white;
   color: black;
+  transform: scale(1.1);
 }
 
 main .fondo_huellas {
@@ -51,11 +53,13 @@ main .fondo_huellas section h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 56px;
+  color: black;
   margin-top: 20px;
   text-align: center;
 }
 main .fondo_huellas section h2 {
   font-size: 25px;
+  color: black;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -73,6 +77,7 @@ main .fondo_huellas section .titulo_pages {
   margin-bottom: 30px;
   margin-left: 25px;
   font-size: 40px;
+  color: black;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -136,7 +141,7 @@ main .fondo_huellas .grid_nosotros .nosotros_texto {
   padding-right: 25px;
   place-self: center;
   width: fit-content;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 main .fondo_huellas .grid_nosotros .img_nosotros {
   width: fit-content;
@@ -161,6 +166,10 @@ main .fondo_huellas .contenedor .perros_conocelos img {
   border-radius: 50%;
   width: 250px;
   height: 250px;
+  transition: all 1s;
+}
+main .fondo_huellas .contenedor .perros_conocelos img:hover {
+  transform: scale(1.2);
 }
 main .fondo_huellas .contenedor .perros_conocelos .descripcion {
   margin-top: 20px;
@@ -178,42 +187,50 @@ footer {
   margin: 0 auto;
   text-align: center;
   background-color: #FFE3C9;
-  padding: 20px;
+  padding: 25px;
 }
 footer h4 {
-  font-size: 16px;
+  font-size: 17px;
+  color: black;
   font-family: "Garamond_SemiBold";
+  font-weight: 400;
+}
+footer a img {
+  padding: 0.5rem;
+  width: 45px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-  .contenedor {
+  main .fondo_huellas .contenedor {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
-  .grid_inicio {
+  main .fondo_huellas .grid_inicio {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
-  .grid_nosotros {
+  main .fondo_huellas .grid_nosotros {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedor {
+  main .fondo_huellas .contenedor {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
   }
-  .grid_inicio {
+  main .fondo_huellas .grid_inicio {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
-  .grid_nosotros {
+  main .fondo_huellas .grid_nosotros {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;

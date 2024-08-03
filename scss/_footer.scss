@@ -2,9 +2,18 @@ footer{
     margin:0 auto;
     text-align: center;
     background-color: $fondo;
-    padding: 20px;
+    padding: 25px;
     h4{
-        font-size: 16px;
+        @include encabezados (17px,$bl);
         font-family:"Garamond_SemiBold";
+        font-weight: 400;
     }
+    a{
+        img{
+        padding: 0.5rem;
+        width: 45px;
+        display: inline-block;
+        text-decoration: none;
+        }
+    }    
 }

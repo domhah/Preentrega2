@@ -1,0 +1,4 @@
+@mixin encabezados($fs,$cl){
+    font-size: $fs;
+    color: $cl;
+}
